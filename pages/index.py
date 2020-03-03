@@ -18,15 +18,14 @@ column1 = dbc.Col(
         
             ## Your Value Proposition
 
-            Emphasize how the app will benefit users. Don't emphasize the underlying technology.
+            Estimate the cost of living, using easy to find information. 
 
-            ✅ RUN is a running app that adapts to your fitness levels and designs personalized workouts to help you improve your running.
+            COL CALC helps you determine the overall cost of living for a given area. We use easy to find information such as rent, cost of a movie ticket, and average utility cost to paint a clear overall idea. 
 
-            ❌ RUN is the only intelligent running app that uses sophisticated deep neural net machine learning to make your run smarter because we believe in ML driven workouts.
 
             """
         ),
-        dcc.Link(dbc.Button('Your Call To Action', color='primary'), href='/predictions')
+        dcc.Link(dbc.Button('Calc your COL', color='primary'), href='/predictions')
     ],
     md=4,
 )

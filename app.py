@@ -15,7 +15,7 @@ pre-compiled theme. Bootswatch is a great place to find new themes. Links to
 CDNs for each of the Bootswatch styles are also included , and can be used 
 with the external_stylesheets argument of the Dash constructor:
 
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.CERULEAN])
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.MINTY])
 
 Go to https://bootswatch.com/ to preview these Bootswatch themes:
 
@@ -44,7 +44,7 @@ dbc.themes.YETI
 """
 
 external_stylesheets = [
-    dbc.themes.BOOTSTRAP, # Bootswatch theme
+    dbc.themes.MINTY, # Bootswatch theme
     'https://use.fontawesome.com/releases/v5.9.0/css/all.css', # for social media icons
 ]
 
@@ -54,5 +54,5 @@ meta_tags=[
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets, meta_tags=meta_tags)
 app.config.suppress_callback_exceptions = True # see https://dash.plot.ly/urls
-app.title = 'YOUR APP NAME' # appears in browser title bar
+app.title = 'Cost of Living Calculator' # appears in browser title bar
 server = app.server
